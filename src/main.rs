@@ -14,6 +14,10 @@ fn main() {
     println!("CONST:{}", VALUE_CONST);
     println!("{}", get_input());
     println!("{}", add(x, y));
+    let c = 10.0f32;//casting
+    println!("Y:{}", c);
+    let e = 19_000_i64;//casting
+    println!("Y:{}", e);
 }
 
 fn get_input() -> String {

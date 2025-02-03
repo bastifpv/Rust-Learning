@@ -13,10 +13,16 @@ fn main() {
     println!("Y:{}", y);
     println!("CONST:{}", VALUE_CONST);
     println!("{}", get_input());
+    println!("{}", add(x, y));
 }
 
 fn get_input() -> String {
     let mut ret = String::new();
     io::stdin().read_line(&mut ret).expect("failed to read");
     return ret;
+}
+
+fn add(one: i32, two: i32) -> i32 {
+    let result = one + two;
+    return result
 }

@@ -18,6 +18,15 @@ fn main() {
     println!("Y:{}", c);
     let e = 19_000_i64;//casting
     println!("Y:{}", e);
+    let mut a = 19 as i64;//casting
+    println!("Y:{}", a);
+    a = c as i64; //explicit type convertion
+    println!("Y:{}", a);
+
+
+    let u = (i32::MAX as i64) + 1;
+    println!("Y:{}", (u as i32));
+    
 }
 
 fn get_input() -> String {

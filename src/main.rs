@@ -12,7 +12,13 @@ fn main() {
     let y = 4;
     println!("Y:{}", y);
     println!("CONST:{}", VALUE_CONST);
-    println!("{}", get_input());
+    let stri = get_input();
+    println!("{}", stri.trim());
+
+    let inp_input: i64 = stri.trim().parse().unwrap();
+    println!("Y:{}", inp_input);
+
+
     println!("{}", add(x, y));
     let c = 10.0f32;//casting
     println!("Y:{}", c);
@@ -26,6 +32,8 @@ fn main() {
 
     let u = (i32::MAX as i64) + 1;
     println!("Y:{}", (u as i32));
+
+
     
 }
 

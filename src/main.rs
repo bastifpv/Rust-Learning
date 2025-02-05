@@ -44,6 +44,10 @@ fn get_input() -> String {
 }
 
 fn add(one: i32, two: i32) -> i32 {
-    let result = one + two;
-    return result
+    return one + two;
+
+}
+fn sub(one: i32, two: i32) -> i32 {
+    one - two
+
 }
